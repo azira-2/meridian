@@ -1,0 +1,82 @@
+.hero-device-stage {
+  right: -7vw;
+}
+
+.float-balance {
+  right: 28%;
+}
+
+.laptop-loading,
+.laptop-fallback {
+  position: absolute;
+  inset: 8% 4% 4%;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  z-index: 2;
+}
+
+.laptop-fallback {
+  color: #74817a;
+  font-size: 11px;
+}
+
+.fallback-screen {
+  width: min(66vw, 450px);
+  aspect-ratio: 1.58;
+  padding: 18px;
+  border: 8px solid #303b3c;
+  border-radius: 12px 12px 5px 5px;
+  background: #edf2ee;
+  box-shadow: 0 22px 45px rgba(34, 54, 44, .18);
+}
+
+.fallback-screen span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #1c3938;
+  color: #d9e9e2;
+  font-weight: 700;
+}
+
+.fallback-screen i {
+  display: block;
+  height: 8px;
+  margin: 18px 0;
+  border-radius: 5px;
+  background: #d2dfd6;
+}
+
+.fallback-screen i:nth-of-type(2) {
+  width: 68%;
+}
+
+.fallback-screen i:nth-of-type(3) {
+  height: 54px;
+  background: #c4d9cb;
+}
+
+.fallback-base {
+  width: min(75vw, 510px);
+  height: 12px;
+  border-radius: 2px 2px 12px 12px;
+  background: linear-gradient(#c1c9c4, #8e9a94);
+}
+
+.laptop-fallback p {
+  margin-top: 18px;
+}
+
+@media (max-width: 1100px) {
+  .hero-device-stage {
+    width: 64vw;
+    right: -8vw;
+  }
+
+  .float-balance {
+    right: 28%;
+  }
+}
